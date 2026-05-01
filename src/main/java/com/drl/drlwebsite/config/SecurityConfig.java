@@ -45,7 +45,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
             .requestMatchers(HttpMethod.GET, "/api/journals/**").permitAll()
             .requestMatchers(HttpMethod.GET, "/api/volumes/**").permitAll()
             .requestMatchers(HttpMethod.GET, "/api/articles/**").permitAll()
-
+             .requestMatchers("/api/health").permitAll()
             .requestMatchers("/api/lab/events/**").permitAll()
             .requestMatchers("/api/upload/**").permitAll()
             .requestMatchers("/api/lab/training/**").permitAll()
